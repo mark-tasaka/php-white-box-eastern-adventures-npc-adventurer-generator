@@ -1,0 +1,318 @@
+/*
+NPC Adventurers
+*/
+
+body{
+	font-family: sans-serif;
+	font-size: 0.9em;;
+	font-weight: bold;
+}
+
+#left_top{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 500px;
+}
+
+#right_top{
+	position:absolute;
+	top: 0px;
+	left: 500px;
+	width: 500px;
+}
+
+#left_bottom{
+	position:absolute;
+	top: 647px;
+	left: 0px;
+	width: 500px;
+}
+
+#right_bottom{
+	position:absolute;
+	top: 647px;
+	left: 500px;
+	width: 500px;
+}
+
+#character_sheet0, #character_sheet1, #character_sheet2, #character_sheet3{
+    width: 500px;
+    height: auto;
+	display: block;
+}
+
+
+#name0, #name1, #name2, #name3{
+    position: absolute;
+    top: 62px;
+    left: 25px;
+    font-size: 0.8em;
+}
+
+
+#race0, #race1, #race2, #race3{
+    position: absolute;
+    top: 62px;
+    left: 203px;
+    font-size: 0.8em;
+}
+
+
+
+#class0, #class1, #class2, #class3{
+    position: absolute;
+    top: 62px;
+    left: 288px;
+    font-size: 0.8em;
+}
+
+
+
+#alignment0, #alignment1, #alignment2, #alignment3{
+    position: absolute;
+    top: 62px;
+    left: 418px;
+    font-size: 0.8em;
+}
+
+
+
+#strength0, #strength1, #strength2, #strength3{
+    position: absolute;
+    top: 182px;
+    left: 70px;
+    font-size: 1.5em;
+}
+
+
+#strengthMod0, #strengthMod1, #strengthMod2, #strengthMod3{
+    position: absolute;
+    top: 182px;
+    left: 105px;
+    font-size: 1.5em;
+}
+
+#dexterity0, #dexterity1, #dexterity2, #dexterity3{
+    position: absolute;
+    top: 214px;
+    left: 70px;
+    font-size: 1.5em;
+}
+
+
+#dexterityMod0, #dexterityMod1, #dexterityMod2, #dexterityMod3{
+    position: absolute;
+    top: 214px;
+    left: 105px;
+    font-size: 1.5em;
+}
+
+#constitution0, #constitution1, #constitution2, #constitution3{
+    position: absolute;
+    top: 246px;
+    left: 70px;
+    font-size: 1.5em;
+}
+
+
+#constitutionMod0, #constitutionMod1, #constitutionMod2, #constitutionMod3{
+    position: absolute;
+    top: 246px;
+    left: 105px;
+    font-size: 1.5em;
+}
+
+#intelligence0, #intelligence1, #intelligence2, #intelligence3{
+    position: absolute;
+    top: 278px;
+    left: 70px;
+    font-size: 1.5em;
+}
+
+
+#intelligenceMod0, #intelligenceMod1, #intelligenceMod2, #intelligenceMod3{
+    position: absolute;
+    top: 278px;
+    left: 105px;
+    font-size: 1.5em;
+}
+
+#wisdom0, #wisdom1, #wisdom2, #wisdom3{
+    position: absolute;
+    top: 310px;
+    left: 70px;
+    font-size: 1.5em;
+}
+
+
+#wisdomMod0, #wisdomMod1, #wisdomMod2, #wisdomMod3{
+    position: absolute;
+    top: 310px;
+    left: 105px;
+    font-size: 1.5em;
+}
+
+#charisma0, #charisma1, #charisma2, #charisma3{
+    position: absolute;
+    top: 342px;
+    left: 70px;
+    font-size: 1.5em;
+}
+
+
+#charismaMod0, #charismaMod1, #charismaMod2, #charismaMod3{
+    position: absolute;
+    top: 342px;
+    left: 105px;
+    font-size: 1.5em;
+}
+
+#personality0, #personality1, #personality2, #personality3{
+    position: absolute;
+    top: 483px;
+    left: 348px;
+    font-size: 0.8em;;
+    width: 135px;
+}
+
+#status0, #status1, #status2, #status3{
+    position: absolute;
+    top: 422px;
+    left: 120px;
+    font-size: 1em;
+}
+
+#merit0, #merit1, #merit2, #merit3{
+    position: absolute;
+    top: 406px;
+    left: 120px;
+    font-size: 1em;
+}
+
+#honour0, #honour1, #honour2, #honour3{
+    position: absolute;
+    top: 400px;
+    left: 32px;
+    font-size: 1.6em;
+}
+
+#save0, #save1, #save2, #save3{
+    position: absolute;
+    top: 485px;
+    left: 32px;
+    font-size: 1.4em;
+}
+
+#saveBonus0, #saveBonus1, #saveBonus2, #saveBonus3{
+    position: absolute;
+    top: 480px;
+    left: 72px;
+    width: 80px;
+    font-size: 0.7em;
+}
+
+
+#specialAbility0, #specialAbility1, #specialAbility2, #specialAbility3{
+    position: absolute;
+    top: 273px;
+    left: 348px;
+    width: 135px;
+    font-size: 0.8em;
+}
+
+
+
+#maxHirelings0, #maxHirelings1, #maxHirelings2, #maxHirelings3{
+    position: absolute;
+    top: 558px;
+    left: 88px;
+    font-size: 1.4em;
+}
+
+
+#hirelingMorale0, #hirelingMorale1, #hirelingMorale2, #hirelingMorale3{
+    position: absolute;
+    top: 582px;
+    left: 88px;
+    font-size: 1.4em;
+}
+
+
+#hirelingLoyality0, #hirelingLoyality1, #hirelingLoyality2, #hirelingLoyality3{
+    position: absolute;
+    top: 607px;
+    left: 88px;
+    font-size: 1.4em;
+}
+
+#toHit0, #toHit1, #toHit2, #toHit3{
+    position: absolute;
+    top: 153px;
+    left: 255px;
+    font-size: 0.95em;
+}
+#toHit10, #toHit11, #toHit12, #toHit13{
+    position: absolute;
+    top: 153px;
+    left: 278px;
+    font-size: 0.95em;
+}
+#toHit20, #toHit21, #toHit22, #toHit23{
+    position: absolute;
+    top: 153px;
+    left: 301px;
+    font-size: 0.95em;
+}
+#toHit30, #toHit31, #toHit32, #toHit33{
+    position: absolute;
+    top: 153px;
+    left: 324px;
+    font-size: 0.95em;
+}
+#toHit40, #toHit41, #toHit42, #toHit43{
+    position: absolute;
+    top: 153px;
+    left: 348px;
+    font-size: 0.95em;
+}
+#toHit50, #toHit51, #toHit52, #toHit53{
+    position: absolute;
+    top: 153px;
+    left: 372px;
+    font-size: 0.95em;
+}
+#toHit60, #toHit61, #toHit62, #toHit63{
+    position: absolute;
+    top: 153px;
+    left: 397px;
+    font-size: 0.95em;
+}
+#toHit70, #toHit71, #toHit72, #toHit73{
+    position: absolute;
+    top: 153px;
+    left: 421px;
+    font-size: 0.95em;
+}
+#toHit80, #toHit81, #toHit82, #toHit83{
+    position: absolute;
+    top: 153px;
+    left: 445px;
+    font-size: 0.95em;
+}
+#toHit90, #toHit91, #toHit92, #toHit93{
+    position: absolute;
+    top: 153px;
+    left: 468px;
+    font-size: 0.95em;
+}
+
+
+
+#demo{
+    position: absolute;
+    top: 330px;
+    left: 210px;
+    font-size: 0.75em;
+    width: 110px;
+}
