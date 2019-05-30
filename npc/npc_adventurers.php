@@ -260,10 +260,14 @@
         $npcToHit3 = getToHit ($class3, $npcLevel3);
 
         $npcBonusLanguage0 = bonusLanguages ($intelligence0);
+        $npcBonusLanguage1 = bonusLanguages ($intelligence1);
+        $npcBonusLanguage2 = bonusLanguages ($intelligence2);
+        $npcBonusLanguage3 = bonusLanguages ($intelligence3);
 
-        $bonusLan = 3;
-
-        $npcLanguages0 = BonusLanguagesHuman ($bonusLan);
+        $npcLanguages0 = getLanguages ($npcBonusLanguage0, $race0);
+        $npcLanguages1 = getLanguages ($npcBonusLanguage1, $race1);
+        $npcLanguages2 = getLanguages ($npcBonusLanguage2, $race2);
+        $npcLanguages3 = getLanguages ($npcBonusLanguage3, $race3);
         
 
 
@@ -484,7 +488,7 @@
             <span id="specialAbility0">
                 <?php
                 
-                echo  $npcRaceBonusMessage0 . '<br/><br/>' . $npcStrengthMessage0 . $npcDexerityMessage0;
+                echo  $npcRaceBonusMessage0 . '<br/>' . $npcStrengthMessage0 . $npcDexerityMessage0;
                 
                 ?>
             </span>
@@ -566,11 +570,11 @@
             </span>
 
             
-            <span id="demo">
+            <span id="language0">
                 <?php
                 foreach($npcLanguages0 as $lan)
                 {
-                    echo $lan . ', ';
+                    echo '<br/>' . $lan;
                 }
                 ?>
             </span>
@@ -882,6 +886,16 @@
                 ?>
             </span>
 
+            
+            <span id="language1">
+                <?php
+                foreach($npcLanguages1 as $lan)
+                {
+                    echo '<br/>' . $lan;
+                }
+                ?>
+                </span>
+
 
 
 
@@ -1171,7 +1185,15 @@
                 echo  ($npcToHit2 + 9);
                 ?>
             </span>
-
+            
+            <span id="language2">
+                <?php
+                foreach($npcLanguages2 as $lan)
+                {
+                    echo '<br/>' . $lan;
+                }
+                ?>
+                </span>
 
       
         </aside>
@@ -1453,12 +1475,20 @@
                 echo  ($npcToHit3 + 8);
                 ?>
             </span>
-            <span id="toHit92">
+            <span id="toHit93">
                 <?php
                 echo  ($npcToHit3 + 9);
                 ?>
             </span>
-
+            
+            <span id="language3">
+                <?php
+                foreach($npcLanguages3 as $lan)
+                {
+                    echo '<br/>' . $lan;
+                }
+                ?>
+                </span>
        
 
 
