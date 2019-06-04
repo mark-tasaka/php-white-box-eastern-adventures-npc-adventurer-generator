@@ -170,7 +170,7 @@ body{
 
 #personality0, #personality1, #personality2, #personality3{
     position: absolute;
-    top: 495px;
+    top: 500px;
     left: 348px;
     font-size: 0.75em;;
     width: 135px;
@@ -315,3 +315,120 @@ body{
     left: 348px;
     font-size:0.75em;
 }
+
+
+#classSpecial0, #classSpecial1, #classSpecial2, #classSpecial3{
+    position: absolute;
+    top: 205px;
+    left: 348px;
+    font-size:0.85em;
+    width: 135px;
+}
+
+
+#ninjaSpecial0, #ninjaSpecial1, #ninjaSpecial2, #ninjaSpecial3{
+    position: absolute;
+    top: 205px;
+    left: 365px;
+    font-size:1.6em;
+}
+
+
+
+#spell0, #spell1, #spell2, #spell3{
+    position: absolute;
+    top: 202px;
+    left: 358px;
+    font-size:0.75em;
+}
+
+#shugenjaSpellBook0, #shugenjaSpellBook1, #shugenjaSpellBook2, #shugenjaSpellBook3{
+    position: absolute;
+    top: 575px;
+    left: 192px;
+    font-size:0.7em;
+    width: 290px;
+}
+
+
+#turn1HD0, #turn1HD1, #turn1HD2, #turn1HD3{
+    position: absolute;
+    top: 600px;
+    left: 248px;
+    font-size:1em;
+}
+
+#turn2HD0, #turn2HD1, #turn2HD2, #turn2HD3{
+    position: absolute;
+    top: 600px;
+    left: 273px;
+    font-size:1em;
+}
+
+#turn3HD0, #turn3HD1, #turn3HD2, #turn3HD3{
+    position: absolute;
+    top: 600px;
+    left: 298px;
+    font-size:1em;
+}
+
+#turn4HD0, #turn4HD1, #turn4HD2, #turn4HD3{
+    position: absolute;
+    top: 600px;
+    left: 323px;
+    font-size:1em;
+}
+
+#turn5HD0, #turn5HD1, #turn5HD2, #turn5HD3{
+    position: absolute;
+    top: 600px;
+    left: 348px;
+    font-size:1em;
+}
+
+#turn6HD0, #turn6HD1, #turn6HD2, #turn6HD3{
+    position: absolute;
+    top: 600px;
+    left: 373px;
+    font-size:1em;
+}
+
+#turn7HD0, #turn7HD1, #turn7HD2, #turn7HD3{
+    position: absolute;
+    top: 600px;
+    left: 398px;
+    font-size:1em;
+}
+
+#turn8HD0, #turn8HD1, #turn8HD2, #turn8HD3{
+    position: absolute;
+    top: 600px;
+    left: 421px;
+    font-size:1em;
+}
+
+#turn9HD0, #turn9HD1, #turn9HD2, #turn9HD3{
+    position: absolute;
+    top: 600px;
+    left: 445px;
+    font-size:1em;
+}
+
+#turn10HD0, #turn10HD1, #turn10HD2, #turn10HD3{
+    position: absolute;
+    top: 600px;
+    left: 470px;
+    font-size:1em;
+}
+
+
+#hitPoints0{
+    position: absolute;
+    top: 143px;
+    left: 130px;
+    font-size:1.2em;
+}
+
+
+
+

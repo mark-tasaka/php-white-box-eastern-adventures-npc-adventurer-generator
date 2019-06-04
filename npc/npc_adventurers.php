@@ -38,6 +38,10 @@
         include 'php/hirelings.php';
         include 'php/toHit.php';
         include 'php/languages.php';
+        include 'php/classAbilities.php';
+        include 'php/shugenjaSpells.php';
+        include 'php/turnUndead.php';
+        include 'php/hitPoints.php';
         
         
             
@@ -269,6 +273,77 @@
         $npcLanguages2 = getLanguages ($npcBonusLanguage2, $race2);
         $npcLanguages3 = getLanguages ($npcBonusLanguage3, $race3);
         
+        $npcBushiSchool0 = bushiSchool ($class0);
+        $npcBushiSchool1 = bushiSchool ($class1);
+        $npcBushiSchool2 = bushiSchool ($class2);
+        $npcBushiSchool3 = bushiSchool ($class3);
+
+        $npcNinjutsu0 = getNinjutsu ($class0, $npcLevel0);
+        $npcNinjutsu1 = getNinjutsu ($class1, $npcLevel1);
+        $npcNinjutsu2 = getNinjutsu ($class2, $npcLevel2);
+        $npcNinjutsu3 = getNinjutsu ($class3, $npcLevel3);
+
+        $npcSpells0 = getSpellsCount ($class0, $npcLevel0);
+        $npcSpells1 = getSpellsCount ($class1, $npcLevel1);
+        $npcSpells2 = getSpellsCount ($class2, $npcLevel2);
+        $npcSpells3 = getSpellsCount ($class3, $npcLevel3);
+
+        $shugenjaSpellBook0 = getShugenjaSpellList ($class0, $npcLevel0);
+        $shugenjaSpellBook1 = getShugenjaSpellList ($class1, $npcLevel1);
+        $shugenjaSpellBook2 = getShugenjaSpellList ($class2, $npcLevel2);
+        $shugenjaSpellBook3 = getShugenjaSpellList ($class3, $npcLevel3);
+
+        $turn1HD0 = turn1HD ($class0, $npcLevel0);
+        $turn1HD1 = turn1HD ($class1, $npcLevel1);
+        $turn1HD2 = turn1HD ($class2, $npcLevel2);
+        $turn1HD3 = turn1HD ($class3, $npcLevel3);
+
+        $turn2HD0 = turn2HD ($class0, $npcLevel0);
+        $turn2HD1 = turn2HD ($class1, $npcLevel1);
+        $turn2HD2 = turn2HD ($class2, $npcLevel2);
+        $turn2HD3 = turn2HD ($class3, $npcLevel3);
+
+        $turn3HD0 = turn3HD ($class0, $npcLevel0);
+        $turn3HD1 = turn3HD ($class1, $npcLevel1);
+        $turn3HD2 = turn3HD ($class2, $npcLevel2);
+        $turn3HD3 = turn3HD ($class3, $npcLevel3);
+
+        $turn4HD0 = turn4HD ($class0, $npcLevel0);
+        $turn4HD1 = turn4HD ($class1, $npcLevel1);
+        $turn4HD2 = turn4HD ($class2, $npcLevel2);
+        $turn4HD3 = turn4HD ($class3, $npcLevel3);
+
+        $turn5HD0 = turn5HD ($class0, $npcLevel0);
+        $turn5HD1 = turn5HD ($class1, $npcLevel1);
+        $turn5HD2 = turn5HD ($class2, $npcLevel2);
+        $turn5HD3 = turn5HD ($class3, $npcLevel3);
+
+        $turn6HD0 = turn6HD ($class0, $npcLevel0);
+        $turn6HD1 = turn6HD ($class1, $npcLevel1);
+        $turn6HD2 = turn6HD ($class2, $npcLevel2);
+        $turn6HD3 = turn6HD ($class3, $npcLevel3);
+
+        $turn7HD0 = turn7HD ($class0, $npcLevel0);
+        $turn7HD1 = turn7HD ($class1, $npcLevel1);
+        $turn7HD2 = turn7HD ($class2, $npcLevel2);
+        $turn7HD3 = turn7HD ($class3, $npcLevel3);
+
+        $turn8HD0 = turn8HD ($class0, $npcLevel0);
+        $turn8HD1 = turn8HD ($class1, $npcLevel1);
+        $turn8HD2 = turn8HD ($class2, $npcLevel2);
+        $turn8HD3 = turn8HD ($class3, $npcLevel3);
+
+        $turn9HD0 = turn9HD ($class0, $npcLevel0);
+        $turn9HD1 = turn9HD ($class1, $npcLevel1);
+        $turn9HD2 = turn9HD ($class2, $npcLevel2);
+        $turn9HD3 = turn9HD ($class3, $npcLevel3);
+
+        $turn10HD0 = turn10HD ($class0, $npcLevel0);
+        $turn10HD1 = turn10HD ($class1, $npcLevel1);
+        $turn10HD2 = turn10HD ($class2, $npcLevel2);
+        $turn10HD3 = turn10HD ($class3, $npcLevel3);
+
+        $npcHitPoints0 = bushiHitPoints ($npcLevel0, $constitution0);
 
 
         
@@ -579,27 +654,109 @@
                 ?>
             </span>
 
+            <span id="classSpecial0">
+                <?php
+                echo  ($npcBushiSchool0);
+                ?>
+            </span>
+            
+            <span id="ninjaSpecial0">
+                <?php
+                echo  $npcNinjutsu0;
+                ?>
+            </span>
+            
+            <span id="spell0">
+                <?php
+                echo  $npcSpells0;
+                ?>
+            </span>
+            
+            <span id="shugenjaSpellBook0">
+                <?php
+                foreach($shugenjaSpellBook0 as $spells)
+                {
+                    echo $spells;
+                }
+                ?>
+            </span>
+            
+            <span id="spell0">
+                <?php
+                echo  $npcSpells0;
+                ?>
+            </span>
+            
+            <span id="turn1HD0">
+                <?php
+                echo  $turn1HD0;
+                ?>
+            </span>
+            
+            <span id="turn2HD0">
+                <?php
+                echo  $turn2HD0;
+                ?>
+            </span>
+            
+            <span id="turn3HD0">
+                <?php
+                echo  $turn3HD0;
+                ?>
+            </span>
+            
+            <span id="turn4HD0">
+                <?php
+                echo  $turn4HD0;
+                ?>
+            </span>
+            
+            <span id="turn5HD0">
+                <?php
+                echo  $turn5HD0;
+                ?>
+            </span>
+            
+            <span id="turn6HD0">
+                <?php
+                echo  $turn6HD0;
+                ?>
+            </span>
+            
+            <span id="turn7HD0">
+                <?php
+                echo  $turn7HD0;
+                ?>
+            </span>
+            
+            <span id="turn8HD0">
+                <?php
+                echo  $turn8HD0;
+                ?>
+            </span>
+            
+            <span id="turn9HD0">
+                <?php
+                echo  $turn9HD0;
+                ?>
+            </span>
+            
+            <span id="turn10HD0">
+                <?php
+                echo  $turn10HD0;
+                ?>
+            </span>
+            
+            <span id="hitPoints0">
+                <?php
+                echo  $npcHitPoints0;
+                ?>
+            </span>
+
             
 
             
 
-            
-
-
-            
-
-            
-
-
-             
-
-
-            
-
-
-
-
-        
         </aside>
         
         
@@ -895,6 +1052,94 @@
                 }
                 ?>
                 </span>
+
+            <span id="classSpecial1">
+                <?php
+                echo  ($npcBushiSchool1);
+                ?>
+            </span>
+                        
+            <span id="ninjaSpecial1">
+                <?php
+                echo  $npcNinjutsu1;
+                ?>
+            </span>
+            
+            
+            <span id="spell1">
+                <?php
+                echo  $npcSpells1;
+                ?>
+            </span>
+                        
+            <span id="shugenjaSpellBook1">
+                <?php
+                foreach($shugenjaSpellBook1 as $spells)
+                {
+                    echo $spells;
+                }
+                ?>
+            </span>
+            
+            <span id="turn1HD1">
+                <?php
+                echo  $turn1HD1;
+                ?>
+            </span>
+            
+            <span id="turn2HD1">
+                <?php
+                echo  $turn2HD1;
+                ?>
+            </span>
+            
+            <span id="turn3HD1">
+                <?php
+                echo  $turn3HD1;
+                ?>
+            </span>
+            
+            <span id="turn4HD1">
+                <?php
+                echo  $turn4HD1;
+                ?>
+            </span>
+            
+            <span id="turn5HD1">
+                <?php
+                echo  $turn5HD1;
+                ?>
+            </span>
+            
+            <span id="turn6HD1">
+                <?php
+                echo  $turn6HD1;
+                ?>
+            </span>
+            
+            <span id="turn7HD1">
+                <?php
+                echo  $turn7HD1;
+                ?>
+            </span>
+            
+            <span id="turn8HD1">
+                <?php
+                echo  $turn8HD1;
+                ?>
+            </span>
+            
+            <span id="turn9HD1">
+                <?php
+                echo  $turn9HD1;
+                ?>
+            </span>
+            
+            <span id="turn10HD1">
+                <?php
+                echo  $turn10HD1;
+                ?>
+            </span>
 
 
 
@@ -1195,6 +1440,97 @@
                 ?>
                 </span>
 
+            <span id="classSpecial2">
+                <?php
+                echo  ($npcBushiSchool2);
+                ?>
+            </span>
+     
+            <span id="ninjaSpecial2">
+                <?php
+                echo  $npcNinjutsu2;
+                ?>
+            </span>
+            
+            
+            <span id="spell2">
+                <?php
+                echo  $npcSpells2;
+                ?>
+            </span>
+                        
+            <span id="shugenjaSpellBook2">
+                <?php
+                foreach($shugenjaSpellBook2 as $spells)
+                {
+                    echo $spells;
+                }
+                ?>
+            </span>
+            
+            <span id="turn1HD2">
+                <?php
+                echo  $turn1HD2;
+                ?>
+            </span>
+            
+            <span id="turn2HD2">
+                <?php
+                echo  $turn2HD2;
+                ?>
+            </span>
+            
+            <span id="turn3HD2">
+                <?php
+                echo  $turn3HD2;
+                ?>
+            </span>
+            
+            <span id="turn4HD2">
+                <?php
+                echo  $turn4HD2;
+                ?>
+            </span>
+            
+            <span id="turn5HD2">
+                <?php
+                echo  $turn5HD2;
+                ?>
+            </span>
+            
+            <span id="turn6HD2">
+                <?php
+                echo  $turn6HD2;
+                ?>
+            </span>
+            
+            <span id="turn7HD2">
+                <?php
+                echo  $turn7HD2;
+                ?>
+            </span>
+            
+            <span id="turn8HD2">
+                <?php
+                echo  $turn8HD2;
+                ?>
+            </span>
+            
+            <span id="turn9HD2">
+                <?php
+                echo  $turn9HD2;
+                ?>
+            </span>
+            
+            <span id="turn10HD2">
+                <?php
+                echo  $turn10HD2;
+                ?>
+            </span>
+
+
+
+
       
         </aside>
         
@@ -1489,6 +1825,96 @@
                 }
                 ?>
                 </span>
+                
+
+            <span id="classSpecial3">
+                <?php
+                echo  ($npcBushiSchool3);
+                ?>
+            </span>
+                 
+            <span id="ninjaSpecial3">
+                <?php
+                echo  $npcNinjutsu3;
+                ?>
+            </span>
+            
+            
+            <span id="spell3">
+                <?php
+                echo  $npcSpells3;
+                ?>
+            </span>
+                        
+            <span id="shugenjaSpellBook3">
+                <?php
+                foreach($shugenjaSpellBook3 as $spells)
+                {
+                    echo $spells;
+                }
+                ?>
+            </span>
+            
+            <span id="turn1HD3">
+                <?php
+                echo  $turn1HD3;
+                ?>
+            </span>
+            
+            <span id="turn2HD3">
+                <?php
+                echo  $turn2HD3;
+                ?>
+            </span>
+            
+            <span id="turn3HD3">
+                <?php
+                echo  $turn3HD3;
+                ?>
+            </span>
+            
+            <span id="turn4HD3">
+                <?php
+                echo  $turn4HD3;
+                ?>
+            </span>
+            
+            <span id="turn5HD3">
+                <?php
+                echo  $turn5HD3;
+                ?>
+            </span>
+            
+            <span id="turn6HD3">
+                <?php
+                echo  $turn6HD3;
+                ?>
+            </span>
+            
+            <span id="turn7HD3">
+                <?php
+                echo  $turn7HD3;
+                ?>
+            </span>
+            
+            <span id="turn8HD3">
+                <?php
+                echo  $turn8HD3;
+                ?>
+            </span>
+            
+            <span id="turn9HD3">
+                <?php
+                echo  $turn9HD3;
+                ?>
+            </span>
+            
+            <span id="turn10HD3">
+                <?php
+                echo  $turn10HD3;
+                ?>
+            </span>
+       
        
 
 
