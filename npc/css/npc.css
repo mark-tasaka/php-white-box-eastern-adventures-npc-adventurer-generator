@@ -170,9 +170,9 @@ body{
 
 #personality0, #personality1, #personality2, #personality3{
     position: absolute;
-    top: 500px;
+    top: 505px;
     left: 348px;
-    font-size: 0.75em;;
+    font-size: 0.7em;;
     width: 135px;
 }
 
@@ -422,11 +422,20 @@ body{
 }
 
 
-#hitPoints0{
+#hitPoints0, #hitPoints1, #hitPoints2, #hitPoints3{
     position: absolute;
-    top: 143px;
-    left: 130px;
-    font-size:1.2em;
+    top: 148px;
+    left: 126px;
+    font-size:0.75em;
+}
+
+
+
+#npcArmour0, #npcArmour1, #npcArmour2, #npcArmour3{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    font-size:0.8em;
 }
 
 

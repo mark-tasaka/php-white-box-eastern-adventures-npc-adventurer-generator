@@ -42,6 +42,7 @@
         include 'php/shugenjaSpells.php';
         include 'php/turnUndead.php';
         include 'php/hitPoints.php';
+        include 'php/armour.php';
         
         
             
@@ -343,7 +344,20 @@
         $turn10HD2 = turn10HD ($class2, $npcLevel2);
         $turn10HD3 = turn10HD ($class3, $npcLevel3);
 
-        $npcHitPoints0 = bushiHitPoints ($npcLevel0, $constitution0);
+        $npcHitPoints0 = getHitPoints($class0, $npcLevel0, $constitution0);
+        $npcHitPoints1 = getHitPoints($class1, $npcLevel1, $constitution1);
+        $npcHitPoints2 = getHitPoints($class2, $npcLevel2, $constitution2);
+        $npcHitPoints3 = getHitPoints($class3, $npcLevel3, $constitution3);
+
+        $npcHitDice0 = getHitDice($class0, $npcLevel0);
+        $npcHitDice1 = getHitDice($class1, $npcLevel1);
+        $npcHitDice2 = getHitDice($class2, $npcLevel2);
+        $npcHitDice3 = getHitDice($class3, $npcLevel3);
+
+        $npcArmour0 = getArmour ($class0, $npcLevel0);
+        $npcArmour1 = getArmour ($class1, $npcLevel1);
+        $npcArmour2 = getArmour ($class2, $npcLevel2);
+        $npcArmour3 = getArmour ($class3, $npcLevel3);
 
 
         
@@ -749,9 +763,16 @@
             
             <span id="hitPoints0">
                 <?php
-                echo  $npcHitPoints0;
+                echo  $npcHitPoints0 . ' ' . $npcHitDice0;
                 ?>
             </span>
+            
+            <span id="npcArmour0">
+                <?php
+                echo  $npcArmour0;
+                ?>
+            </span>
+
 
             
 
@@ -1138,6 +1159,18 @@
             <span id="turn10HD1">
                 <?php
                 echo  $turn10HD1;
+                ?>
+            </span>
+            
+            <span id="hitPoints1">
+                <?php
+                echo  $npcHitPoints1 . ' ' . $npcHitDice1;
+                ?>
+            </span>
+            
+            <span id="npcArmour1">
+                <?php
+                echo  $npcArmour1;
                 ?>
             </span>
 
@@ -1527,6 +1560,18 @@
                 echo  $turn10HD2;
                 ?>
             </span>
+            
+            <span id="hitPoints2">
+                <?php
+                echo  $npcHitPoints2 . ' ' . $npcHitDice2;
+                ?>
+            
+                <span id="npcArmour2">
+                    <?php
+                    echo  $npcArmour2;
+                    ?>
+                </span>
+            </span>
 
 
 
@@ -1912,6 +1957,18 @@
             <span id="turn10HD3">
                 <?php
                 echo  $turn10HD3;
+                ?>
+            </span>
+            
+            <span id="hitPoints3">
+                <?php
+                echo  $npcHitPoints3 . ' ' . $npcHitDice3;
+                ?>
+            </span>
+            
+            <span id="npcArmour3">
+                <?php
+                echo  $npcArmour3;
                 ?>
             </span>
        
