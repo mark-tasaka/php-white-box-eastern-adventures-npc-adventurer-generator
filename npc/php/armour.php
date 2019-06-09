@@ -10,16 +10,16 @@ function bushiArmour ($level)
 
         if($number === 1)
         {
-            $armour = 'heavy armour';
-        }
+            $armour = 'Heavy Armour';
+}
         else
         {
-            $armour = 'medium armour';
+            $armour = 'Medium Armour';
         }
     }
     else
     {
-        $armour = 'heavy armour';
+        $armour = 'Heavy Armour';
     }
 
     return $armour;
@@ -36,11 +36,11 @@ function soheiArmour ($level)
 
         if($number === 1)
         {
-            $armour = 'light armour';
+            $armour = 'Light Armour';
         }
         else
         {
-            $armour = 'medium armour';
+            $armour = 'Medium Armour';
         }
     }
     else if($level >= 3 && $level <=6)
@@ -49,19 +49,18 @@ function soheiArmour ($level)
 
         if($number === 1)
         {
-            $armour = 'heavy armour';
-        }
+            $armour = 'Heavy Armour';
+}
         else
         {
-            $armour = 'medium armour';
+            $armour = 'Medium Armour';
         }
     }
     else
     {
-        $armour = 'heavy armour';
+        $armour = 'Heavy Armour';
     }
-
-    return $armour;
+   return $armour;
 }
 
 
@@ -77,7 +76,7 @@ function getArmour ($class, $level)
 
     if($class === 'Ninja')
     {
-        $armour = 'kusari katabira (light armour)';
+        $armour = 'Light Armour (kusari katabira)';
     }
 
     if($class === 'Sohei')

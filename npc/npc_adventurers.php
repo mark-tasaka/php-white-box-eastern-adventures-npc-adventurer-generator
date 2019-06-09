@@ -43,6 +43,8 @@
         include 'php/turnUndead.php';
         include 'php/hitPoints.php';
         include 'php/armour.php';
+        include 'php/armourClass.php';
+        include 'php/weapons.php';
         
         
             
@@ -358,6 +360,21 @@
         $npcArmour1 = getArmour ($class1, $npcLevel1);
         $npcArmour2 = getArmour ($class2, $npcLevel2);
         $npcArmour3 = getArmour ($class3, $npcLevel3);
+
+        $npcDexBonus0 = dexModifier ($dexterity0);
+        $npcDexBonus1 = dexModifier ($dexterity1);
+        $npcDexBonus2 = dexModifier ($dexterity2);
+        $npcDexBonus3 = dexModifier ($dexterity3);
+
+        $npcDAC0 = getDAC ($npcArmour0, $npcDexBonus0);
+        $npcDAC1 = getDAC ($npcArmour1, $npcDexBonus1);
+        $npcDAC2 = getDAC ($npcArmour2, $npcDexBonus2);
+        $npcDAC3 = getDAC ($npcArmour3, $npcDexBonus3);
+
+        $npcAAC0 = getAAC ($npcArmour0, $npcDexBonus0);
+        $npcAAC1 = getAAC ($npcArmour1, $npcDexBonus1);
+        $npcAAC2 = getAAC ($npcArmour2, $npcDexBonus2);
+        $npcAAC3 = getAAC ($npcArmour3, $npcDexBonus3);
 
 
         
@@ -772,6 +789,13 @@
                 echo  $npcArmour0;
                 ?>
             </span>
+            
+            <span id="npcArmourClass0">
+                <?php
+                echo  $npcDAC0 . ' [' . $npcAAC0 . ']';
+                ?>
+            </span>
+
 
 
             
@@ -1173,6 +1197,12 @@
                 echo  $npcArmour1;
                 ?>
             </span>
+            
+            <span id="npcArmourClass1">
+                <?php
+                echo  $npcDAC1 . ' [' . $npcAAC1 . ']';
+                ?>
+            </span>
 
 
 
@@ -1565,12 +1595,19 @@
                 <?php
                 echo  $npcHitPoints2 . ' ' . $npcHitDice2;
                 ?>
+            </span>
+
             
-                <span id="npcArmour2">
+            <span id="npcArmour2">
                     <?php
                     echo  $npcArmour2;
                     ?>
-                </span>
+            </span>
+            
+            <span id="npcArmourClass2">
+                <?php
+                echo  $npcDAC2 . ' [' . $npcAAC2 . ']';
+                ?>
             </span>
 
 
@@ -1969,6 +2006,12 @@
             <span id="npcArmour3">
                 <?php
                 echo  $npcArmour3;
+                ?>
+            </span>
+            
+            <span id="npcArmourClass3">
+                <?php
+                echo  $npcDAC3 . ' [' . $npcAAC3 . ']';
                 ?>
             </span>
        

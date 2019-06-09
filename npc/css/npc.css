@@ -433,10 +433,19 @@ body{
 
 #npcArmour0, #npcArmour1, #npcArmour2, #npcArmour3{
     position: absolute;
-    top: 250px;
-    left: 200px;
-    font-size:0.8em;
+    top: 285px;
+    left: 190px;
+    font-size:0.75em;
+    width: 150px;
 }
+
+#npcArmourClass0, #npcArmourClass1, #npcArmourClass2, #npcArmourClass3{
+    position: absolute;
+    top: 123px;
+    left: 25px;
+    font-size:1.2em;
+}
+
 
 
 
