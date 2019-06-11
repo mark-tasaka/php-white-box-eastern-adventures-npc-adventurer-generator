@@ -2,11 +2,11 @@
 
 function bushiAddBow ($race)
 {
-    $bow = "long bow";
+    $bow = "Longbow";
 
     if($race === 'Koropokuru')
     {
-        $bow = "short bow"; 
+        $bow = "Short Bow"; 
     }
 
     return $bow;
@@ -24,7 +24,7 @@ function getBushiWeapons ($school, $race)
     shuffle($martialWeapons);
     shuffle($polearms);
 
-    $addBow = rand(1, 3);
+    $addBow = rand(1, 2);
 
     if($school === 'Twin Blades')
     {
@@ -125,6 +125,124 @@ function getBushiWeapons ($school, $race)
 
 }
 
+function getSoheiWeapons ()
+{
+    $weapons = array();
+
+    $martialWeapons = array ("Katana (long sword)*", "Wakazashi (short sword)*", "Ono (axe)*", "Tanto (long dagger)*", " Chigiriki (mace)*", "Tetsubo (great club)**", "No-Dachi (great sword)**");
+
+    shuffle($martialWeapons);
+
+    $addBow = rand(1, 2);
+    
+    array_push($weapons, 'Naginata (polearm)**');
+    
+    if($addBow === 1)
+    {
+        array_push($weapons, 'Longbow');
+        array_push($weapons, 'Quiver with 20 arrows');
+    }
+    
+    $number = rand(1,2);
+        
+    for($count = 0; $count < $number; ++$count)
+    {
+        array_push($weapons, $martialWeapons[$count]);
+    }
+
+    return $weapons;
+}
+
+
+function getNinjaWeapons()
+{
+    
+    $weapons = array();
+
+    $ninjaWeapons = array ("Kunai (knife)*", "Kusari-gama*", "Kusari-fudo*", "Tanto (long dagger)*");
+
+    shuffle($ninjaWeapons);
+
+    $addBow = rand(1, 2);
+    
+    array_push($weapons, 'Ninjato (sword)*');
+    
+    array_push($weapons, 'Shurikens x 6');
+    
+    $number = rand(0,2);
+        
+    for($count = 0; $count < $number; ++$count)
+    {
+        array_push($weapons, $ninjaWeapons[$count]);
+    }
+    
+    if($addBow === 1)
+    {
+        array_push($weapons, 'Short Bow');
+        array_push($weapons, 'Quiver with 20 arrows');
+    }
+
+    return $weapons;
+}
+
+function getShugenjaWeapons ()
+{
+    $weapons = array();
+
+    $shugenjaWeapons = array ("Jo (staff)", "Kama (sickle)", "Gunsen (war fan)", "Jitte", "Tonfu", "Kuwa", "Walking Stick", "Club");
+
+    shuffle($shugenjaWeapons);
+    
+    $number = rand(2,4);
+        
+    for($count = 0; $count < $number; ++$count)
+    {
+        array_push($weapons, $shugenjaWeapons[$count]);
+    }
+
+    return $weapons;
+    
+}
+
+function getWeapons ($class, $race, $school)
+{
+    $weapons = array();
+
+    if($class === 'Bushi')
+    {
+        $weapons = getBushiWeapons ($school, $race);
+    }
+
+    if($class === 'Ninja')
+    {
+        $weapons = getNinjaWeapons();
+    }
+    
+    if($class === 'Sohei')
+    {
+        $weapons = getSoheiWeapons();
+    }
+    
+    if($class === 'Shugenja')
+    {
+        $weapons = getShugenjaWeapons();
+    }
+
+    return $weapons;
+}
+
+
+function getWeaponDescription ($class)
+{
+    $description = '';
+
+    if($class === 'Bushi' || $class === 'Ninja' || $class === 'Sohei')
+    {
+        $description = '*Martial Weapon <br/>**Two-handed Martial Weapon';
+    }
+
+    return $description;
+}
 
 
 ?>

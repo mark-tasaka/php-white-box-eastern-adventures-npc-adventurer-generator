@@ -45,6 +45,8 @@
         include 'php/armour.php';
         include 'php/armourClass.php';
         include 'php/weapons.php';
+        include 'php/wealth.php';
+        include 'php/equipment.php';
         
         
             
@@ -90,13 +92,18 @@
             $alignmentOption = $_POST["theAlignment"];
     
         }
+                
+        if(isset($_POST["theWealth"]))
+        {
+            $wealthOption = $_POST["theWealth"];
+    
+        }
 
         
         $class0 = getClass ($npcType);
         $class1 = getClass ($npcType);
         $class2 = getClass ($npcType);
         $class3 = getClass ($npcType);
-        
         
         $charSheet0 = getCharacterSheet ($class0);
         $charSheet1 = getCharacterSheet ($class1);
@@ -376,13 +383,27 @@
         $npcAAC2 = getAAC ($npcArmour2, $npcDexBonus2);
         $npcAAC3 = getAAC ($npcArmour3, $npcDexBonus3);
 
+        $npcWeapons0 = getWeapons ($class0, $race0, $npcBushiSchool0);
+        $npcWeapons1 = getWeapons ($class1, $race1, $npcBushiSchool1);
+        $npcWeapons2 = getWeapons ($class2, $race2, $npcBushiSchool2);
+        $npcWeapons3 = getWeapons ($class3, $race3, $npcBushiSchool3);
 
-        
+        $npcWeaponDesc0 = getWeaponDescription ($class0);
+        $npcWeaponDesc1 = getWeaponDescription ($class1);
+        $npcWeaponDesc2 = getWeaponDescription ($class2);
+        $npcWeaponDesc3 = getWeaponDescription ($class3);
 
-        
+        $npcWealth0 = getWealth ($wealthOption);
+        $npcWealth1 = getWealth ($wealthOption);
+        $npcWealth2 = getWealth ($wealthOption);
+        $npcWealth3 = getWealth ($wealthOption);
 
-    
-        
+        $npcGear0 = getEquipment ($class0);
+        $npcGear1 = getEquipment ($class1);
+        $npcGear2 = getEquipment ($class2);
+        $npcGear3 = getEquipment ($class3);
+
+
         ?>
         
         <!-- html id tags -->
@@ -510,7 +531,7 @@
                 ?>
             </span>
            
-        <span id="charisma0">
+            <span id="charisma0">
                 <?php
                 
                 echo $charisma0;
@@ -796,11 +817,35 @@
                 ?>
             </span>
 
+            <span id="weapons0">
+                <?php
+                foreach($npcWeapons0 as $weapon)
+                {
+                    echo $weapon. '<br/>';
+                }
+                ?>
+            </span>
 
+            <span id="npcWeaponDesc0">
+                <?php
+                echo  $npcWeaponDesc0;
+                ?>
+            </span>
 
-            
+            <span id="wealth0">
+                <?php
+                echo  $npcWealth0;
+                ?>
+            </span>
 
-            
+            <span id="gear0">
+                <?php
+                foreach($npcGear0 as $gear)
+                {
+                    echo $gear;
+                }
+                ?>
+            </span>
 
         </aside>
         
@@ -1204,11 +1249,37 @@
                 ?>
             </span>
 
+            <span id="weapons1">
+                <?php
+                foreach($npcWeapons1 as $weapon)
+                {
+                    echo $weapon. '<br/>';
+                }
+                ?>
+            </span>
+
+            <span id="npcWeaponDesc1">
+                <?php
+                echo  $npcWeaponDesc1;
+                ?>
+            </span>
+
+            <span id="wealth1">
+                <?php
+                echo  $npcWealth1;
+                ?>
+            </span>
+            
+            <span id="gear1">
+                <?php
+                foreach($npcGear1 as $gear)
+                {
+                    echo $gear;
+                }
+                ?>
+            </span>
 
 
-
-
-        
         </aside>
 
         
@@ -1611,6 +1682,35 @@
             </span>
 
 
+            <span id="weapons2">
+                <?php
+                foreach($npcWeapons2 as $weapon)
+                {
+                    echo $weapon. '<br/>';
+                }
+                ?>
+            </span>
+
+            <span id="npcWeaponDesc2">
+                <?php
+                echo  $npcWeaponDesc2;
+                ?>
+            </span>
+            
+            <span id="wealth2">
+                <?php
+                echo  $npcWealth2;
+                ?>
+            </span>
+            
+            <span id="gear2">
+                <?php
+                foreach($npcGear2 as $gear)
+                {
+                    echo $gear;
+                }
+                ?>
+            </span>
 
 
       
@@ -2015,14 +2115,39 @@
                 ?>
             </span>
        
+
+            <span id="weapons3">
+                <?php
+                foreach($npcWeapons3 as $weapon)
+                {
+                    echo $weapon. '<br/>';
+                }
+                ?>
+            </span>
        
 
+            <span id="npcWeaponDesc3">
+                <?php
+                echo  $npcWeaponDesc3;
+                ?>
+            </span>
+            
+            <span id="wealth3">
+                <?php
+                echo  $npcWealth3;
+                ?>
+            </span>
 
+            <span id="gear3">
+                <?php
+                foreach($npcGear3 as $gear)
+                {
+                    echo $gear;
+                }
+                ?>
+            </span>
       
           
-            
-          
-        
         </aside>
         
         

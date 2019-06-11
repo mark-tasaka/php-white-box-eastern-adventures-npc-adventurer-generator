@@ -131,6 +131,17 @@
 				<option value="1" selected>Random</option>
 				<option value="2">Blank</option>
 			  </select>
+                                               
+        <span class="formIputDescription1b">Wealth:</span>	
+			  <select id="wealth" name="theWealth" class="">	
+				<option value="1" selected>Modest</option>
+				<option value="2">Poor</option>
+				<option value="3">Comfortable</option>
+				<option value="4">Affluent</option>
+			  </select>
+
+
+        
 
 
         

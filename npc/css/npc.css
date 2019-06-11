@@ -446,7 +446,37 @@ body{
     font-size:1.2em;
 }
 
+#weapons0, #weapons1, #weapons2, #weapons3{
+    position: absolute;
+    top: 202px;
+    left: 190px;
+    font-size:0.75em;
+}
 
+#npcWeaponDesc0, #npcWeaponDesc1, #npcWeaponDesc2, #npcWeaponDesc3{
+    position: absolute;
+    top: 533px;
+    left: 190px;
+    font-size:0.65em;
+    width: 150px;
+}
+
+#wealth0, #wealth1, #wealth2, #wealth3{
+    position: absolute;
+    top: 507px;
+    left: 190px;
+    font-size:0.75em;
+    width: 150px;
+}
+
+
+#gear0, #gear1, #gear2, #gear3{
+    position: absolute;
+    top: 328px;
+    left: 190px;
+    font-size:0.75em;
+    width: 140px;
+}
 
 
 
