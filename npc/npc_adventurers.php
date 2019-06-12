@@ -132,10 +132,10 @@
 
         $spacing = str_repeat('&nbsp;', 4);
 
-        $race0 = getSpecies ($raceOption);
-        $race1 = getSpecies ($raceOption);
-        $race2 = getSpecies ($raceOption);
-        $race3 = getSpecies ($raceOption);
+        $race0 = getSpecies ($raceOption, $class0, $npcLevel0);
+        $race1 = getSpecies ($raceOption, $class1, $npcLevel1);
+        $race2 = getSpecies ($raceOption, $class2, $npcLevel2);
+        $race3 = getSpecies ($raceOption, $class3, $npcLevel3);
 
         $strength0 = strength ($class0);
         $strength1 = strength ($class1);

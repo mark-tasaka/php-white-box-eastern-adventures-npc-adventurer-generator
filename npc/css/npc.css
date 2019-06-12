@@ -433,7 +433,7 @@ body{
 
 #npcArmour0, #npcArmour1, #npcArmour2, #npcArmour3{
     position: absolute;
-    top: 285px;
+    top: 300px;
     left: 190px;
     font-size:0.75em;
     width: 150px;
@@ -472,7 +472,7 @@ body{
 
 #gear0, #gear1, #gear2, #gear3{
     position: absolute;
-    top: 328px;
+    top: 365px;
     left: 190px;
     font-size:0.75em;
     width: 140px;
